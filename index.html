@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div id="image-container">
+      <img id="main-image" srcset="./assets/portrait/nature/road-sm.jpg 640w, ./assets/portrait/nature/road-sm-md.jpg 960w, ./assets/portrait/nature/road-md.jpg 1920w, ./assets/portrait/nature/road-lg.jpg 2400w" sizes="(max-width: 640px) 640px, (max-width: 960px) 960px,
+      (max-width: 1920px) 1920px, (max-width: 2400px) 2400px" src="./assets/portrait/nature/road-lg.jpg" alt="A car driving down a dirt road through a forest"/>
+      <div class="grid-layout">
+        <div class="select-category">
+          <button id="category-btn" tabindex="1" title="Change Image Category">Select Category</button>
+        </div>
+        <img id="view-prev" class="switch" src="./assets/chevron-left.png" alt="View Previous Image" tabindex="2"/>
+        <img id="view-next" class="switch" src="./assets/chevron-right.png" alt="View Next Image" tabindex="3"/>
+      </div>
+  </body>
+</html>
