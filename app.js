@@ -13,7 +13,7 @@ const thumb6 = document.getElementById("6");
 const thumb7 = document.getElementById("7");
 const thumb8 = document.getElementById("8");
 
-// Arrays of images, organised by category and split between portrait and landscape orientation  || NATURE DONE, REST TO DO
+// Arrays of images, organised by category and split between portrait and landscape orientation
 const nature = {
   portrait: [
     {
@@ -219,11 +219,210 @@ const animals = {
     },
   ],
 };
-
-const space = [{ srcset: "", src: "", alt: "" }];
-const art = [{ srcset: "", src: "", alt: "" }];
-const architecture = [{ srcset: "", src: "", alt: "" }];
-const people = [{ srcset: "", src: "", alt: "" }];
+const space = {
+  portrait: [
+    {
+      srcset:
+        "./assets/portrait/space/astronaut-sm.jpg 800w, ./assets/portrait/space/astronaut-sm-md.jpg 1200w, ./assets/portrait/space/astronaut-md.jpg 1920w, ./assets/portrait/space/astronaut-lg.jpg 2400w",
+      src: "./assets/portrait/space/astronaut-lg.jpg",
+      alt: "An astronaut standing on The Moon",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/borealis-sm.jpg 800w, ./assets/portrait/space/borealis-sm-md.jpg 1200w, ./assets/portrait/space/borealis-md.jpg 1920w, ./assets/portrait/space/borealis-lg.jpg 2400w",
+      src: "./assets/portrait/space/borealis-lg.jpg",
+      alt: "The Aurora Borealis glowing green",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/forestsky-sm.jpg 800w, ./assets/portrait/space/forestsky-sm-md.jpg 1200w, ./assets/portrait/space/forestsky-md.jpg 1920w, ./assets/portrait/space/forestsky-lg.jpg 2400w",
+      src: "./assets/portrait/space/forestsky-lg.jpg",
+      alt: "The nightsky reflected in a lake and framed by the silhouette of a forest",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/milky-sm.jpg 800w, ./assets/portrait/space/milky-sm-md.jpg 1200w, ./assets/portrait/space/milky-md.jpg 1920w, ./assets/portrait/space/milky-lg.jpg 2400w",
+      src: "./assets/portrait/space/milky-lg.jpg",
+      alt: "An incredibly detailed image of The Milky Way Galaxy",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/milkyway-sm.jpg 800w, ./assets/portrait/space/milkyway-sm-md.jpg 1200w, ./assets/portrait/space/milkyway-md.jpg 1920w, ./assets/portrait/space/milkyway-lg.jpg 2400w",
+      src: "./assets/portrait/space/milkyway-lg.jpg",
+      alt: "The Milky Way Galaxy",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/nebula-sm.jpg 800w, ./assets/portrait/space/nebula-sm-md.jpg 1200w, ./assets/portrait/space/nebula-md.jpg 1920w, ./assets/portrait/space/nebula-lg.jpg 2400w",
+      src: "./assets/portrait/space/nebula-lg.jpg",
+      alt: "Telescope image of a nebula",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/nightsky-sm.jpg 800w, ./assets/portrait/space/nightsky-sm-md.jpg 1200w, ./assets/portrait/space/nightsky-md.jpg 1920w, ./assets/portrait/space/nightsky-lg.jpg 2400w",
+      src: "./assets/portrait/space/nightsky-lg.jpg",
+      alt: "The Milky Way Galaxy at night",
+    },
+    {
+      srcset:
+        "./assets/portrait/space/torch-sm.jpg 800w, ./assets/portrait/space/torch-sm-md.jpg 1200w, ./assets/portrait/space/torch-md.jpg 1920w, ./assets/portrait/space/torch-lg.jpg 2400w",
+      src: "./assets/portrait/space/torch-lg.jpg",
+      alt: "A person wearing a headtorch looks up at the night sky",
+    },
+  ],
+  landscape: [
+    {
+      srcset:
+        "./assets/landscape/space/earth-sm.jpg 800w, ./assets/landscape/space/earth-sm-md.jpg 1200w, ./assets/landscape/space/earth-md.jpg 1920w, ./assets/landscape/space/earth-lg.jpg 2400w",
+      src: "./assets/landscape/space/earth-lg.jpg",
+      alt: "A view of Earth from The Moon",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/eclipse-sm.jpg 800w, ./assets/landscape/space/eclipse-sm-md.jpg 1200w, ./assets/landscape/space/eclipse-md.jpg 1920w, ./assets/landscape/space/eclipse-lg.jpg 2400w",
+      src: "./assets/landscape/space/eclipse-lg.jpg",
+      alt: "A timelapse of a solar eclipse",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/horsehead-sm.jpg 800w, ./assets/landscape/space/horsehead-sm-md.jpg 1200w, ./assets/landscape/space/horsehead-md.jpg 1920w, ./assets/landscape/space/horsehead-lg.jpg 2400w",
+      src: "./assets/landscape/space/horsehead-lg.jpg",
+      alt: "A view of The Horsehead Nebula",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/hubble-sm.jpg 800w, ./assets/landscape/space/hubble-sm-md.jpg 1200w, ./assets/landscape/space/hubble-md.jpg 1920w, ./assets/landscape/space/hubble-lg.jpg 2400w",
+      src: "./assets/landscape/space/hubble-lg.jpg",
+      alt: "The Hubble Telescope in orbit around Earth",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/rocksky-sm.jpg 800w, ./assets/landscape/space/rocksky-sm-md.jpg 1200w, ./assets/landscape/space/rocksky-md.jpg 1920w, ./assets/landscape/space/rocksky-lg.jpg 2400w",
+      src: "./assets/landscape/space/rocksky-lg.jpg",
+      alt: "Silhouettes of large rocks to the backdrop of the nightsky",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/skyatnight-sm.jpg 800w, ./assets/landscape/space/skyatnight-sm-md.jpg 1200w, ./assets/landscape/space/skyatnight-md.jpg 1920w, ./assets/landscape/space/skyatnight-lg.jpg 2400w",
+      src: "./assets/landscape/space/skyatnight-lg.jpg",
+      alt: "A view of The Milky Way Galaxy at night",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/spaceaurora-sm.jpg 800w, ./assets/landscape/space/spaceaurora-sm-md.jpg 1200w, ./assets/landscape/space/spaceaurora-md.jpg 1920w, ./assets/landscape/space/spaceaurora-lg.jpg 2400w",
+      src: "./assets/landscape/space/spaceaurora-lg.jpg",
+      alt: "A view of the Aurora Borealis from the International Space Station",
+    },
+    {
+      srcset:
+        "./assets/landscape/space/spacewalk-sm.jpg 800w, ./assets/landscape/space/spacewalk-sm-md.jpg 1200w, ./assets/landscape/space/spacewalk-md.jpg 1920w, ./assets/landscape/space/spacewalk-lg.jpg 2400w",
+      src: "./assets/landscape/space/spacewalk-lg.jpg",
+      alt: "An astronaut performs a spacewalk with Earth in the background",
+    },
+  ],
+};
+const architecture = {
+  portrait: [
+    {
+      srcset:
+        "./assets/portrait/architecture/church-sm.jpg 800w, ./assets/portrait/architecture/church-sm-md.jpg 1200w, ./assets/portrait/architecture/church-md.jpg 1920w, ./assets/portrait/architecture/church-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/church-lg.jpg",
+      alt: "Interior of an ornate church",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/dome-sm.jpg 800w, ./assets/portrait/architecture/dome-sm-md.jpg 1200w, ./assets/portrait/architecture/dome-md.jpg 1920w, ./assets/portrait/architecture/dome-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/dome-lg.jpg",
+      alt: "Old church like building with large domed roof",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/pagoda-sm.jpg 800w, ./assets/portrait/architecture/pagoda-sm-md.jpg 1200w, ./assets/portrait/architecture/pagoda-md.jpg 1920w, ./assets/portrait/architecture/pagoda-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/pagoda-lg.jpg",
+      alt: "A pagoda nestled between trees",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/pisa-sm.jpg 800w, ./assets/portrait/architecture/pisa-sm-md.jpg 1200w, ./assets/portrait/architecture/pisa-md.jpg 1920w, ./assets/portrait/architecture/pisa-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/pisa-lg.jpg",
+      alt: "The  Leaning Tower Of Pisa",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/sandstone-sm.jpg 800w, ./assets/portrait/architecture/sandstone-sm-md.jpg 1200w, ./assets/portrait/architecture/sandstone-md.jpg 1920w, ./assets/portrait/architecture/sandstone-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/sandstone-lg.jpg",
+      alt: "Interior view of a sandstone curved wall and window",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/skyscrapers-sm.jpg 800w, ./assets/portrait/architecture/skyscrapers-sm-md.jpg 1200w, ./assets/portrait/architecture/skyscrapers-md.jpg 1920w, ./assets/portrait/architecture/skyscrapers-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/skyscrapers-lg.jpg",
+      alt: "A view of skyscrapers through a window",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/taj-sm.jpg 800w, ./assets/portrait/architecture/taj-sm-md.jpg 1200w, ./assets/portrait/architecture/taj-md.jpg 1920w, ./assets/portrait/architecture/taj-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/taj-lg.jpg",
+      alt: "A large, white domed building framed by a doorway",
+    },
+    {
+      srcset:
+        "./assets/portrait/architecture/wells-sm.jpg 800w, ./assets/portrait/architecture/church-sm-md.jpg 1200w, ./assets/portrait/architecture/wells-md.jpg 1920w, ./assets/portrait/architecture/wells-lg.jpg 2400w",
+      src: "./assets/portrait/architecture/church-lg.jpg",
+      alt: "The nave and scissor arches of Wells Cathedral",
+    },
+  ],
+  landscape: [
+    {
+      srcset:
+        "./assets/landscape/architecture/domed-sm.jpg 800w, ./assets/landscape/architecture/domed-sm-md.jpg 1200w, ./assets/landscape/architecture/domed-md.jpg 1920w, ./assets/landscape/architecture/domed-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/domed-lg.jpg",
+      alt: "Large ornate dome from building interior",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/doorway-sm.jpg 800w, ./assets/landscape/architecture/doorway-sm-md.jpg 1200w, ./assets/landscape/architecture/doorway-md.jpg 1920w, ./assets/landscape/architecture/doorway-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/doorway-lg.jpg",
+      alt: "Looking out at a village through a Moorish style doorway",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/eltz-sm.jpg 800w, ./assets/landscape/architecture/eltz-sm-md.jpg 1200w, ./assets/landscape/architecture/eltz-md.jpg 1920w, ./assets/landscape/architecture/eltz-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/eltz-lg.jpg",
+      alt: "Path leading up to Burg Eltz in the mist",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/light-sm.jpg 800w, ./assets/landscape/architecture/light-sm-md.jpg 1200w, ./assets/landscape/architecture/light-md.jpg 1920w, ./assets/landscape/architecture/light-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/light-lg.jpg",
+      alt: "Light sandstone buildings",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/railway-sm.jpg 800w, ./assets/landscape/architecture/railway-sm-md.jpg 1200w, ./assets/landscape/architecture/railway-md.jpg 1920w, ./assets/landscape/architecture/railway-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/railway-lg.jpg",
+      alt: "A large railway viaduct cuts through the landscape",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/roof-sm.jpg 800w, ./assets/landscape/architecture/roof-sm-md.jpg 1200w, ./assets/landscape/architecture/roof-md.jpg 1920w, ./assets/landscape/architecture/roof-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/roof-lg.jpg",
+      alt: "Odd 'U' shaped roof",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/swan-sm.jpg 800w, ./assets/landscape/architecture/swan-sm-md.jpg 1200w, ./assets/landscape/architecture/swan-md.jpg 1920w, ./assets/landscape/architecture/swan-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/swan-lg.jpg",
+      alt: "Neuschwanstein Castle surrounded by snowy landscape",
+    },
+    {
+      srcset:
+        "./assets/landscape/architecture/windows-sm.jpg 800w, ./assets/landscape/architecture/windows-sm-md.jpg 1200w, ./assets/landscape/architecture/windows-md.jpg 1920w, ./assets/landscape/architecture/windows-lg.jpg 2400w",
+      src: "./assets/landscape/architecture/windows-lg.jpg",
+      alt: "Windows of a large skyscraper lit in different colours",
+    },
+  ],
+};
 
 // Initialise current image selection and screen orientation
 let imgIndex = 0;
@@ -311,7 +510,7 @@ selectCategory.addEventListener("change", (e) => {
     let newStr = thumbImg.slice(0, -6) + "thumb.jpg";
     thumb.src = newStr;
     thumb.alt = currentCategory.landscape[i].alt;
-    thumb.ariaLabel = "Thumbnail to open new image: " + thumb.alt;
+    thumb.ariaLabel = "Thumbnail: " + thumb.alt;
     console.log(thumb.ariaLabel);
     i++;
   }
@@ -368,12 +567,8 @@ function getCategory() {
       return animals;
     case "space":
       return space;
-    case "art":
-      return art;
     case "architecture":
       return architecture;
-    case "people":
-      return people;
   }
 
   return selectCategory.value;

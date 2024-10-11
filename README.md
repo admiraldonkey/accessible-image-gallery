@@ -13,11 +13,6 @@ A simple mobile-first image gallery with a focus on responsiveness and accessibi
 - All interactive sections of the website set to be tabbable and interactive as relevant.
 - Appropriate ARIA roles and labels added as required (on non-semantic tags), with some updating dynamically.
 
-## Still to do
-
-- Finish adding the galleries and test it all displays correctly.
-- Ensure all images have appropriate alt tags.
-
 ## Possible feature additions
 
 - More images/gallery categories
