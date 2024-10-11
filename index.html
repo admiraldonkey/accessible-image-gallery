@@ -12,18 +12,26 @@
       <img id="main-image" srcset="./assets/portrait/nature/road-sm.jpg 800w, ./assets/portrait/nature/road-sm-md.jpg 1200w, ./assets/portrait/nature/road-md.jpg 1920w, ./assets/portrait/nature/road-lg.jpg 2400w" src="./assets/portrait/nature/road-lg.jpg" alt="A car driving down a dirt road through a forest"/>
       <div class="grid-layout">
         <div class="select-category">
-          <button id="category-btn" tabindex="1" title="Change Image Category">Select Category</button>
+          <label for="category">Select Category:</label>
+          <select name="category" id="category" tabindex="1">     <option value="nature">Nature</option>
+              <option value="animals">Animals</option>
+              <option value="space">Space</option>
+              <option value="art">Art</option>
+              <option value="architecture">Architecture</option>
+              <option value="people">People</option>
+          </select>
         </div>
-        <img id="view-prev" class="switch" src="./assets/chevron-left.png" alt="View Previous Image" tabindex="2"/>
-        <img id="view-next" class="switch" src="./assets/chevron-right.png" alt="View Next Image" tabindex="3"/>
-        <img id="1" class="landscape" src="./assets/landscape/nature/canyon-thumb.jpg" alt="Sunbeam shining through a narrow canyon" tabindex="3"/>
-        <img id="2" class="landscape" src="./assets/landscape/nature/hillpath-thumb.jpg" alt="A rocky path leading across a hilly landscape" tabindex="3"/>
-        <img id="3" class="landscape" src="./assets/landscape/nature/hills-thumb.jpg" alt="An arial view of undulating hills" tabindex="3" />
-        <img id="4" class="landscape" src="./assets/landscape/nature/lake-thumb.jpg" alt="View from a lake flanked by large, snow covered mountains" tabindex="3" />
-        <img id="5" class="landscape" src="./assets/landscape/nature/misty-thumb.jpg" alt="A rocky, mountainous landscape shrouded in mist" tabindex="3" />
-        <img id="6" class="landscape" src="./assets/landscape/nature/stream-thumb.jpg" alt="An arial view of a small stream meandering through green rice paddies" tabindex="3" />
-        <img id="7" class="landscape" src="./assets/landscape/nature/sunset-thumb.jpg" alt="A beautiful sunset over the ocean" tabindex="3" />
-        <img id="8" class="landscape" src="./assets/landscape/nature/twilight-coast-thumb.jpg" alt="Coastal view out to sea in twilight" tabindex="3" />
+        <div id="tooltip"><div class="tooltip-contents" role="tooltip" tabindex="2"><img src="./assets/info-i.png"><span class="tooltip-text">Try changing your screen orientation for different image sets!</span></div></div>
+        <img id="view-prev" class="switch" src="./assets/chevron-left.png" alt="View Previous Image" tabindex="3"/>
+        <img id="view-next" class="switch" src="./assets/chevron-right.png" alt="View Next Image" tabindex="4"/>
+        <img id="1" class="landscape" aria-label="Thumbnail to open new image: Sunbeam shining through a narrow canyon" src="./assets/landscape/nature/canyon-thumb.jpg" alt="Sunbeam shining through a narrow canyon" tabindex="4"/>
+        <img id="2" class="landscape" aria-label="Thumbnail to open new image: A rocky path leading across a hilly landscape" src="./assets/landscape/nature/hillpath-thumb.jpg" alt="A rocky path leading across a hilly landscape" tabindex="4"/>
+        <img id="3" class="landscape" aria-label="Thumbnail to open new image: An arial view of undulating hills" src="./assets/landscape/nature/hills-thumb.jpg" alt="An arial view of undulating hills" tabindex="4" />
+        <img id="4" class="landscape" aria-label="Thumbnail to open new image: View from a lake flanked by large, snow covered mountains" src="./assets/landscape/nature/lake-thumb.jpg" alt="View from a lake flanked by large, snow covered mountains" tabindex="4" />
+        <img id="5" class="landscape" aria-label="Thumbnail to open new image: A rocky, mountainous landscape shrouded in mist" src="./assets/landscape/nature/misty-thumb.jpg" alt="A rocky, mountainous landscape shrouded in mist" tabindex="4" />
+        <img id="6" class="landscape" aria-label="Thumbnail to open new image: An arial view of a small stream meandering through green rice paddies" src="./assets/landscape/nature/stream-thumb.jpg" alt="An arial view of a small stream meandering through green rice paddies" tabindex="4" />
+        <img id="7" class="landscape" aria-label="Thumbnail to open new image: A beautiful sunset over the ocean" src="./assets/landscape/nature/sunset-thumb.jpg" alt="A beautiful sunset over the ocean" tabindex="4" />
+        <img id="8" class="landscape" aria-label="Thumbnail to open new image: Coastal view out to sea in twilight" src="./assets/landscape/nature/twilight-coast-thumb.jpg" alt="Coastal view out to sea in twilight" tabindex="4" />
       </div>
     </div>
   </div>
