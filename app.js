@@ -219,6 +219,7 @@ const animals = {
     },
   ],
 };
+
 const space = [{ srcset: "", src: "", alt: "" }];
 const art = [{ srcset: "", src: "", alt: "" }];
 const architecture = [{ srcset: "", src: "", alt: "" }];
