@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="style.css" />
     <script src="./app.js" defer></script>
   </head>
-  <body>
+  <div>
     <div id="image-container">
-      <img id="main-image" srcset="./assets/portrait/nature/road-sm.jpg 640w, ./assets/portrait/nature/road-sm-md.jpg 960w, ./assets/portrait/nature/road-md.jpg 1920w, ./assets/portrait/nature/road-lg.jpg 2400w" sizes="(max-width: 640px) 640px, (max-width: 960px) 960px,
-      (max-width: 1920px) 1920px, (max-width: 2400px) 2400px" src="./assets/portrait/nature/road-lg.jpg" alt="A car driving down a dirt road through a forest"/>
+      <img id="main-image" srcset="./assets/portrait/nature/road-sm.jpg 800w, ./assets/portrait/nature/road-sm-md.jpg 1200w, ./assets/portrait/nature/road-md.jpg 1920w, ./assets/portrait/nature/road-lg.jpg 2400w" src="./assets/portrait/nature/road-lg.jpg" alt="A car driving down a dirt road through a forest"/>
       <div class="grid-layout">
         <div class="select-category">
           <button id="category-btn" tabindex="1" title="Change Image Category">Select Category</button>
         </div>
         <img id="view-prev" class="switch" src="./assets/chevron-left.png" alt="View Previous Image" tabindex="2"/>
         <img id="view-next" class="switch" src="./assets/chevron-right.png" alt="View Next Image" tabindex="3"/>
+        <img id="1" class="landscape" src="./assets/landscape/nature/canyon-thumb.jpg" alt="Sunbeam shining through a narrow canyon" tabindex="3"/>
+        <img id="2" class="landscape" src="./assets/landscape/nature/hillpath-thumb.jpg" alt="A rocky path leading across a hilly landscape" tabindex="3"/>
+        <img id="3" class="landscape" src="./assets/landscape/nature/hills-thumb.jpg" alt="An arial view of undulating hills" tabindex="3" />
+        <img id="4" class="landscape" src="./assets/landscape/nature/lake-thumb.jpg" alt="View from a lake flanked by large, snow covered mountains" tabindex="3" />
+        <img id="5" class="landscape" src="./assets/landscape/nature/misty-thumb.jpg" alt="A rocky, mountainous landscape shrouded in mist" tabindex="3" />
+        <img id="6" class="landscape" src="./assets/landscape/nature/stream-thumb.jpg" alt="An arial view of a small stream meandering through green rice paddies" tabindex="3" />
+        <img id="7" class="landscape" src="./assets/landscape/nature/sunset-thumb.jpg" alt="A beautiful sunset over the ocean" tabindex="3" />
+        <img id="8" class="landscape" src="./assets/landscape/nature/twilight-coast-thumb.jpg" alt="Coastal view out to sea in twilight" tabindex="3" />
       </div>
+    </div>
+  </div>
   </body>
 </html>

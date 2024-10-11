@@ -13,11 +13,7 @@ A simple mobile-first image gallery with a focus on responsiveness and accessibi
 
 ## Still to do
 
-- Figure out how to best deal with the default displayed image (so it displays correctly regardless of orientation).
 - Add an icon with tooltip (top right?) explaining functionality and shortcuts. Possibly code to auto-activate upon reaching end of a gallery for the first time?
-- Add media queries to maintain best functionality and look regardless of device/display size.
-- With the above, possibly add selectable thumbnails instead of the side arrows on larger displays.
-- Probably best to consider best image resolutions/breakpoints in srcset before completing gallery.
 - Finish adding the galleries and test it all displays correctly.
 - Ensure all images have appropriate alt tags.
 - Implement category button functionality and styling (along with ability to switch between).
