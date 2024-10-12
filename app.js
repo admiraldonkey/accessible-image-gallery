@@ -44,7 +44,7 @@ const nature = {
       srcset:
         "./assets/portrait/nature/lake-sm.jpg 800w, ./assets/portrait/nature/lake-sm-md.jpg 1200w, ./assets/portrait/nature/lake-md.jpg 1920w, ./assets/portrait/nature/lake-lg.jpg 2400w",
       src: "./assets/portrait/nature/lake-lg.jpg",
-      alt: "A small tree-covered island int he middle of a lake",
+      alt: "A small tree-covered island in the middle of a lake",
     },
     {
       srcset:
@@ -70,7 +70,6 @@ const nature = {
       srcset:
         "./assets/landscape/nature/canyon-sm.jpg 800w, ./assets/landscape/nature/canyon-sm-md.jpg 1200w, ./assets/landscape/nature/canyon-md.jpg 1920w, ./assets/landscape/nature/canyon-lg.jpg 2400w",
       src: "./assets/landscape/nature/canyon-lg.jpg",
-      ariaLabel: this.ariaLabel + "Sunbeam shining through a narrow canyon",
       alt: "Sunbeam shining through a narrow canyon",
     },
     {
@@ -424,9 +423,9 @@ const architecture = {
   ],
 };
 
-// Initialise current image selection and screen orientation
+// Initialise default category image selection and screen orientation
 let imgIndex = 0;
-let currentCategory = nature; // Update this variable to be dynamic & update the relevant functions
+let currentCategory = nature;
 let screenOrientation = getScreenOrientation();
 
 // Switch default image on screen if user is in landscape mode
@@ -437,6 +436,7 @@ if (getScreenOrientation() == "landscape") {
 }
 
 // EVENT LISTENERS (CLICK, SPACEBAR, ARROWS)
+
 // Listeners to switch to next image
 nextBtn.addEventListener("click", (e) => {
   nextImg();
@@ -444,15 +444,6 @@ nextBtn.addEventListener("click", (e) => {
 nextBtn.addEventListener("keydown", (e) => {
   if (e.code == "Space") {
     nextImg();
-  }
-});
-document.addEventListener("keydown", (e) => {
-  if (e.code == "ArrowRight") {
-    nextImg();
-    if (getScreenOrientation() == "landscape") {
-      let active = document.getElementById(imgIndex + 1);
-      active.focus();
-    }
   }
 });
 
@@ -465,8 +456,16 @@ prevBtn.addEventListener("keydown", (e) => {
     prevImg();
   }
 });
+
+// Listener to handle arrow key presses and display next/prev image as relevant
 document.addEventListener("keydown", (e) => {
-  if (e.code == "ArrowLeft") {
+  if (e.code == "ArrowRight") {
+    nextImg();
+    if (getScreenOrientation() == "landscape") {
+      let active = document.getElementById(imgIndex + 1);
+      active.focus();
+    }
+  } else if (e.code == "ArrowLeft") {
     prevImg();
     if (getScreenOrientation() == "landscape") {
       let active = document.getElementById(imgIndex + 1);
@@ -511,7 +510,6 @@ selectCategory.addEventListener("change", (e) => {
     thumb.src = newStr;
     thumb.alt = currentCategory.landscape[i].alt;
     thumb.ariaLabel = "Thumbnail: " + thumb.alt;
-    console.log(thumb.ariaLabel);
     i++;
   }
 });

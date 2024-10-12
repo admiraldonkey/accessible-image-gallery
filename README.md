@@ -2,7 +2,7 @@
 
 A simple mobile-first image gallery with a focus on responsiveness and accessibility
 
-## Features
+# Features
 
 - Full screen image display, alternate UI and image sets for portrait and landscape modes, loading automatically upon orientation change.
 - Designed to test srcset attribute - each image exists in several resolutions and automatically switches depending on display size (for a total of 256 images + 32 thumbnails).
