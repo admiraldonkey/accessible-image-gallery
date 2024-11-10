@@ -1,6 +1,6 @@
 # Accessible & Responsive Image Gallery
 
-A simple mobile-first image gallery with a focus on responsiveness and accessibility
+Software Development Bootcamp - Week 1 Project - A simple mobile-first image gallery with a focus on responsiveness and accessibility
 
 # Features
 
